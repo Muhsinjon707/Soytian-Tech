@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1310px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 99px;
+  margin-bottom: 68px;
+}
+
+.header__container {
+  background: #1b1c37;
+  width: 100%;
+  border: none;
+  border-radius: 14.42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 11.35px;
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: 26.35px;
+}
+
+.nav li a {
+  font-size: 17.31px;
+  font-weight: 500;
+  line-height: 25.96px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
+.nav li:hover a {
+  border-bottom: 4.33px solid #7579ff;
+}
+
+.nav li.active {
+  border-bottom: 4.33px solid #7579ff;
+}
+
+.btn {
+  font-size: 17.31px;
+  font-weight: 600;
+  line-height: 25.96px;
+  text-align: left;
+  color: white;
+  padding: 8px 36px;
+  background: #7579ff;
+  border: none;
+  border-radius: 8.65px;
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+}
+
+/* header end */
+
+/* hero section */
+
+.hero {
+  height: 100dvh;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__container-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 55px;
+  align-items: start;
+  position: relative;
+}
+
+.text-heading {
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 100px;
+  width: 80%;
+}
+
+.highlight {
+  position: absolute;
+  top: -20px;
+  right: 340px;
+}
+
+.text-paragraph {
+  font-weight: 300;
+  color: #000;
+  font-size: 14px;
+  line-height: 21px;
+  width: 70%;
+}
+
+.text-button {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 16px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: linear-gradient(90deg, #b224ef 0%, #7579ff 100%);
+  border: none;
+  border-radius: 16px;
+}
+
+.main-img {
+  width: 130%;
+  height: 70%;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 900px) {
+  .hero__container {
+    flex-direction: column;
+  }
+
+  .main-img {
+    display: none;
+  }
+
+  .hero {
+    height: 80dvh;
+  }
+
+  .header__container-text {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Hero ends */
+
+/* Skills */
+
+.skills {
+  width: 100%;
+  height: 100dvh;
+  margin-bottom: 200px;
+}
+
+.skills__container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.skills__container-heading {
+  position: relative;
+  border-bottom: 2px solid #edeeff;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.highlight-two {
+  position: absolute;
+  top: -70px;
+  left: 75px;
+}
+
+.inner-heading {
+  display: block;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 67px;
+  color: linear-gradient(90deg, #b224ef 0%, #7579ff 100%);
+}
+
+.skills__container-progress {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 100px;
+}
+
+.progress-wrapper {
+  width: 300px;
+  height: 300px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.circular-bar {
+  width: 220px;
+  height: 220px;
+  background: conic-gradient(#4286f4 252deg, #e8f0f7 0deg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  margin-bottom: 40px;
+}
+
+.circular-bar::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: #e8f0f7;
+  border-radius: 50%;
+  box-shadow: inset 6px 6px 10px -1px #7579ff, inset -6px -6px 10px -1px #7579ff;
+}
+
+.percent {
+  z-index: 10;
+  font-size: 30px;
+}
+
+label {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    .skills__container-progress {
+        gap: 10px;
+        align-content: center;
+        justify-content: center;
+    }
+}
